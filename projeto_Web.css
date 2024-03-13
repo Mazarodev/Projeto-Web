@@ -1,1 +1,69 @@
-/*testando*/
+/* apenas para ver a borda das div/identificar as div*/
+header, main, footer{
+    border: 1px solid black;
+}
+header{
+    background-color: gray;
+}
+main {
+    height: 500px;
+    background-color: rgb(151, 151, 151);
+}
+footer{
+    height: 300px;
+    background-color: rgb(77, 77, 77);
+}
+/* daqui pra cima o codigo pode ser apagado depois de testado*/
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* AREA DO CABEÇALHO*/  
+
+header{
+    position:fixed;
+    width: 100%;
+}
+.containerCabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a img{
+    width: 250px;
+}
+
+.menu {
+    height: 150px;
+}
+.menu ul {
+    height: 150px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+.menu li{
+    padding: 20px 40px;
+    margin:0px 5px;
+}
+.menu a{
+    text-decoration: none;
+}
+
+.imgPerfil img{
+    width: 80px;
+}
+
+
+
+
+/* AREA DO CONTEUDO*/
+main {
+    padding-top: 150px;
+}
