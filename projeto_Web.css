@@ -48,12 +48,16 @@ header{
     justify-content: space-around;
     align-items: end;
 }
-.menu li{
-    padding: 20px 40px;
-    margin:0px 5px;
-}
 .menu a{
     text-decoration: none;
+    padding: 20px 40px;
+    margin:0px 5px;
+    border-radius: 5%;
+    display: block;
+}
+.menu a:hover{
+    background-color: rgb(158, 158, 158);
+    border: 1px solid rgb(187, 187, 187);
 }
 
 .imgPerfil img{
