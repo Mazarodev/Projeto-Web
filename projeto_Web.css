@@ -47,12 +47,13 @@ header{
 
 
 .botaoDoacao a{
+    font-size: x-large;
     padding: 20px 30px;
     color: white;
     text-decoration: none;
     background-color: red;
     font-weight: bold;
-    
+    margin-right: 30px;
 }
 
 /* AREA DO CONTEUDO*/
