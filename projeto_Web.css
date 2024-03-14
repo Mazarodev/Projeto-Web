@@ -45,7 +45,16 @@ header{
     font-size: large;    
 }
 
+/*BOTÂO DOAÇÂO*/
 
+.botaoDoacao a{
+    width: ;
+    height: ;
+    color: white;
+    text-decoration: none;
+    background-color: red;
+    
+}
 
 /* AREA DO CONTEUDO*/
 
@@ -63,3 +72,4 @@ footer{
     height: 300px;  
     background-color: #0b4e2a;
 }
+
