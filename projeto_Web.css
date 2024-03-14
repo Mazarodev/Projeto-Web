@@ -48,11 +48,12 @@ header{
 /*BOTÂO DOAÇÂO*/
 
 .botaoDoacao a{
-    width: ;
-    height: ;
+    width: 30px; ;
+    height: 20px;;
     color: white;
     text-decoration: none;
     background-color: red;
+    font-weight: bold;
     
 }
 
