@@ -33,7 +33,7 @@ header{
 }
 .menu a{
     text-decoration: none;
-    font-size: x-large;
+    font-size: large;
     padding: 20px 40px;
     margin:0px 5px;
     border-radius: 5%;
@@ -43,7 +43,7 @@ header{
     background-color: #0b4e2a;
     box-shadow: 3px 3px 3px 3px black;
     text-shadow: 3px 3px 3px  black;
-    font-size: x-large;    
+    font-size: large;    
 }
 
 
