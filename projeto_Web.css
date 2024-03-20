@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -68,9 +69,43 @@ header{
 /* AREA DO CONTEUDO*/
 
 main {
-    padding-top: 150px;
-    height: 500px;
-    background-color: rgb(191, 221, 194);
+    padding-top: 200px;
+    max-width: 100%;
+    min-height: 500px;
+    /*background-color: rgb(191, 221, 194);   caso voltar ao antigo background só colocar essa linha de codigo*/
+    background: linear-gradient(rgb(196, 219, 198), #578A6A, #0b4e2a );
+}
+
+.containerInicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: space-around;
+}
+
+.textoInicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.textoInicio h1{
+    font-size: 100px;
+    font-weight: 900;
+    text-shadow: black 3px 3px 5px;
+}
+.textoInicio p{
+    font-weight: 500;
+    font-size: 30px;
+    text-shadow: rgb(61, 61, 61) 2px 2px 2px;
+}
+.imagemInicio{
+    display: flex;
+}
+.imagemInicio img{
+    border-radius: 30px;
+    padding: 10px;
+    width: 700px;
 }
 
 
@@ -78,7 +113,8 @@ main {
 /*AREA DO RODA PÉ*/
 
 footer{
-    height: 300px;  
+    min-height: 300px; 
+    width:100%; 
     background-color: #0b4e2a;
 }
 
