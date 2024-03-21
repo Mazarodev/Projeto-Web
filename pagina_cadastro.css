@@ -60,6 +60,9 @@ header{
     border-radius: 10px;
     display: flex;
 }
+.botaoDoacao a:hover{
+    border: 1px solid rgb(255, 255, 255);
+}
 
 /* AREA DO CONTEUDO*/
 
