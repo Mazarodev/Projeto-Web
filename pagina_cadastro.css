@@ -2,6 +2,8 @@
     margin: 0px;
     padding: 0px;
     color: whitesmoke;
+    font-family:'overpass Mono';
+    text-decoration: none;
 }
 
 
@@ -60,16 +62,57 @@ main {
 /*AREA DO RODA PÉ*/
 
 footer{
-    height: 300px;  
+    min-height: 300px;  
+    width: 100%;
     background-color: #0b4e2a;
+}
+
+.containerRodape{
+    padding-top: 30px;
+}
+
+.containerLMC{
+    display: flex;
+    justify-content: space-around;
 }
 
 .logo_rodape a img{
     width: 200px;
-    margin-top: 20px;
-    margin-left: 20px;
 }
 
 .menu_rodape{
     height: 150px;
+}
+
+.menu_rodape ul, .contatosRodaPe ul{
+    list-style: none;
+}
+
+.menu_rodape li, .contatosRodaPe li{
+font-family:'overpass Mono';
+padding-top: 20px;
+}
+
+.menu_rodape a:hover{
+    color:rgb(165, 165, 165)
+
+}
+
+.contatosRodaPe li{
+    width: 500px;
+}
+
+.ConteudoLogoRodaPe{
+    width: 300px;
+}
+.containerTxtBotao{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+    
+}
+
+.RazaoSocial-RodaPe{
+    display: flex;
+    justify-content: center;
 }
