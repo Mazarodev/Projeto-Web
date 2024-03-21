@@ -49,6 +49,17 @@ header{
     text-shadow: 3px 3px 3px  black;
     font-size: large;    
 }
+.botaoDoacao a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    padding: 20px 30px;
+    color: black;
+    text-decoration: none;
+    background-color: rgb(235, 161, 64);
+    margin-right: 30px;
+    border-radius: 10px;
+    display: flex;
+}
 
 /* AREA DO CONTEUDO*/
 
