@@ -71,11 +71,41 @@ header{
 
 main {
     padding-top: 150px;
-    height: 500px;
     background-color: rgb(191, 221, 194);
 }
 
+.conteudo_quemsomos h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(4, 31, 11);
+    text-align: center;
+    margin-top: 2%;
+}
 
+.conteudo_quemsomos h2{
+    color: rgb(4, 31, 11);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 5%;
+}
+
+.conteudo_quemsomos p{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size:120%;
+    text-align: justify;
+}
+
+.conteudo_quemsomos li{
+    margin-left: 10%;
+    font-size: 120%;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.fundadores{
+    margin-left: 5%;
+}  
 
 /*AREA DO RODA PÉ*/
 
