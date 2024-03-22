@@ -76,10 +76,17 @@ main {
     background-color: rgb(191, 221, 194);
 }
 
-label{
-    
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+form div{
+    display: flex;
+    flex-direction: ;
+    margin-bottom: 0px;
+}
 
 /*AREA DO RODA PÉ*/
 
