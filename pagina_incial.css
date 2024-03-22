@@ -71,8 +71,48 @@ header{
 
 main {
     padding-top: 150px;
-    height: 500px;
+    width: 100%;
+    min-height: 500px;
     background-color: rgb(191, 221, 194);
+}
+
+.containerConteudo-1{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.txtConteudo-1{
+    margin: 15px 50px;
+    text-shadow: gray 1px 1px 1px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.txtConteudo-1 h1{
+    font-size: 80px;
+    font-weight: 900;
+    text-shadow: gray 2px 2px 2px;
+}
+
+.txtConteudo-1 p{
+    font-size: 30px;
+}
+
+.txtH1Conteudo-1{
+    display: flex;
+    justify-content: center;
+}
+
+.imgConteudo-1{
+    display: flex;
+    flex-direction: column;
+}
+.imgConteudo-1 img{
+    width: 600px;
+    margin: 15px 50px;
+    border-radius: 20px;
 }
 
 
