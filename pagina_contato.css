@@ -74,19 +74,25 @@ main {
     padding-top: 150px;
     height: 500px;
     background-color: rgb(191, 221, 194);
-}
-
-section{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-form div{
-    display: flex;
-    flex-direction: ;
-    margin-bottom: 0px;
+form{
+    width: 100%;
+    margin-bottom: 10px;
+    color: black;
 }
+
+input{
+    outline: unset;
+}
+
+textarea{
+    
+}
+
 
 /*AREA DO RODA PÉ*/
 
