@@ -116,10 +116,10 @@ main {
 
 
 
-.teste123{
+.conteudo-2{
     display: flex;
-    justify-content: center;
-    
+    flex-direction: column;
+    align-items: center;
 }
 
 .containerMain{
@@ -131,17 +131,17 @@ main {
 }
 
 .navigation{
-    position: relative;
     bottom: 20px;
     left: 30%;
     top:-10%;
     display: flex;
+    padding-top: 10px;
 }
 
 .bar{
     width: 70px;
     height: 17px;
-    border: 2px solid whitesmoke;
+    border: 3px solid whitesmoke;
     margin: 6px;
     border-radius: 6px;
     cursor: pointer;
@@ -188,6 +188,567 @@ input{
 }
 #slide5:checked ~ .s1{
     margin-left: -80%;
+}
+
+.containerConteudo-3{
+    display: flex;
+}
+
+.imgConteudo-3{
+    display: flex;
+    padding-top: 50px;
+}
+.imgConteudo-3 img{
+    padding: 10px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.txtConteudo-3{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0px 100px;
+}
+
+/*AREA DO RODA PÉ*/
+
+footer{
+    min-height: 300px;  
+    width: 100%;
+    background-color: #0b4e2a;
+}
+
+.containerRodape{
+    padding-top: 30px;
+}
+
+.containerLMC{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo_rodape a img{
+    width: 200px;
+}
+
+.menu_rodape{
+    height: 150px;
+}
+
+.menu_rodape ul, .contatosRodaPe ul{
+    list-style: none;
+}
+
+.menu_rodape li, .contatosRodaPe li{
+font-family:'overpass Mono';
+padding-top: 20px;
+}
+
+.menu_rodape a:hover{
+    color:rgb(165, 165, 165)
+
+}
+
+.contatosRodaPe li{
+    width: 500px;
+}
+
+.ConteudoLogoRodaPe{
+    width: 300px;
+}
+.containerTxtBotao{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+    
+}
+
+.RazaoSocial-RodaPe{
+    display: flex;
+    justify-content: center;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    color: whitesmoke;
+    font-family:'overpass Mono';
+    text-decoration: none;
+}
+
+
+/* AREA DO CABEÇALHO*/  
+
+header{
+    position:fixed;
+    width: 100%;
+    background-color: #185f39;
+}
+.containerCabecalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+.logo a img{
+    width: 200px;
+}
+
+.menu {
+    height: 150px;
+}
+.menu ul {
+    height: 150px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+.menu a{
+    text-decoration: none;
+    font-size: large;
+    padding: 20px 40px;
+    margin:0px 5px;
+    border-radius: 5%;
+    display: block;  
+}
+
+.menu a:hover{
+    background-color: #0b4e2a;
+    box-shadow: 3px 3px 3px 3px black;
+    text-shadow: 3px 3px 3px  black;
+    font-size: large;    
+}
+.botaoDoacao a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    padding: 20px 30px;
+    color: black;
+    text-decoration: none;
+    background-color: rgb(235, 161, 64);
+    margin-right: 30px;
+    border-radius: 10px;
+    display: flex;
+}
+.botaoDoacao a:hover{
+    font-size: x-large;
+    border: 1px solid rgb(255, 255, 255);
+}    
+   
+
+
+/* AREA DO CONTEUDO*/
+
+main {
+    padding-top: 150px;
+    background-color: rgb(191, 221, 194);
+    width: 100%;
+}
+
+.containerConteudo-1{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.txtConteudo-1{
+    margin: 15px 50px;
+    text-shadow: gray 1px 1px 1px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.txtConteudo-1 h1{
+    font-size: 80px;
+    font-weight: 900;
+    text-shadow: gray 2px 2px 2px;
+}
+
+.txtConteudo-1 p{
+    font-size: 30px;
+}
+
+.txtH1Conteudo-1{
+    display: flex;
+    justify-content: center;
+}
+
+.imgConteudo-1{
+    display: flex;
+    flex-direction: column;
+}
+.imgConteudo-1 img{
+    width: 600px;
+    margin: 15px 50px;
+    border-radius: 20px;
+}
+
+
+
+.conteudo-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerMain{
+    height: 490px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.navigation{
+    bottom: 20px;
+    left: 30%;
+    top:-10%;
+    display: flex;
+    padding-top: 10px;
+}
+
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 3px solid whitesmoke;
+    margin: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover{
+    background-color: white;
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;   
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+#slide4:checked ~ .s1{
+    margin-left: -60%;
+}
+#slide5:checked ~ .s1{
+    margin-left: -80%;
+}
+
+.containerConteudo-3{
+    display: flex;
+}
+
+.imgConteudo-3{
+    display: flex;
+    padding-top: 50px;
+}
+.imgConteudo-3 img{
+    padding: 10px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.txtConteudo-3{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0px 100px;
+}
+
+/*AREA DO RODA PÉ*/
+
+footer{
+    min-height: 300px;  
+    width: 100%;
+    background-color: #0b4e2a;
+}
+
+.containerRodape{
+    padding-top: 30px;
+}
+
+.containerLMC{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo_rodape a img{
+    width: 200px;
+}
+
+.menu_rodape{
+    height: 150px;
+}
+
+.menu_rodape ul, .contatosRodaPe ul{
+    list-style: none;
+}
+
+.menu_rodape li, .contatosRodaPe li{
+font-family:'overpass Mono';
+padding-top: 20px;
+}
+
+.menu_rodape a:hover{
+    color:rgb(165, 165, 165)
+
+}
+
+.contatosRodaPe li{
+    width: 500px;
+}
+
+.ConteudoLogoRodaPe{
+    width: 300px;
+}
+.containerTxtBotao{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+    
+}
+
+.RazaoSocial-RodaPe{
+    display: flex;
+    justify-content: center;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    color: whitesmoke;
+    font-family:'overpass Mono';
+    text-decoration: none;
+}
+
+
+/* AREA DO CABEÇALHO*/  
+
+header{
+    position:fixed;
+    width: 100%;
+    background-color: #185f39;
+}
+.containerCabecalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+.logo a img{
+    width: 200px;
+}
+
+.menu {
+    height: 150px;
+}
+.menu ul {
+    height: 150px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+.menu a{
+    text-decoration: none;
+    font-size: large;
+    padding: 20px 40px;
+    margin:0px 5px;
+    border-radius: 5%;
+    display: block;  
+}
+
+.menu a:hover{
+    background-color: #0b4e2a;
+    box-shadow: 3px 3px 3px 3px black;
+    text-shadow: 3px 3px 3px  black;
+    font-size: large;    
+}
+.botaoDoacao a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    padding: 20px 30px;
+    color: black;
+    text-decoration: none;
+    background-color: rgb(235, 161, 64);
+    margin-right: 30px;
+    border-radius: 10px;
+    display: flex;
+}
+.botaoDoacao a:hover{
+    font-size: x-large;
+    border: 1px solid rgb(255, 255, 255);
+}    
+   
+
+
+/* AREA DO CONTEUDO*/
+
+main {
+    padding-top: 150px;
+    background-color: rgb(191, 221, 194);
+    width: 100%;
+}
+
+.containerConteudo-1{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.txtConteudo-1{
+    margin: 15px 50px;
+    text-shadow: gray 1px 1px 1px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.txtConteudo-1 h1{
+    font-size: 80px;
+    font-weight: 900;
+    text-shadow: gray 2px 2px 2px;
+}
+
+.txtConteudo-1 p{
+    font-size: 30px;
+}
+
+.txtH1Conteudo-1{
+    display: flex;
+    justify-content: center;
+}
+
+.imgConteudo-1{
+    display: flex;
+    flex-direction: column;
+}
+.imgConteudo-1 img{
+    width: 600px;
+    margin: 15px 50px;
+    border-radius: 20px;
+}
+
+
+
+.conteudo-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerMain{
+    height: 490px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.navigation{
+    bottom: 20px;
+    left: 30%;
+    top:-10%;
+    display: flex;
+    padding-top: 10px;
+}
+
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 3px solid whitesmoke;
+    margin: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover{
+    background-color: white;
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;   
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+#slide4:checked ~ .s1{
+    margin-left: -60%;
+}
+#slide5:checked ~ .s1{
+    margin-left: -80%;
+}
+
+.containerConteudo-3{
+    display: flex;
+}
+
+.imgConteudo-3{
+    display: flex;
+    padding-top: 50px;
+}
+.imgConteudo-3 img{
+    padding: 10px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.txtConteudo-3{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0px 100px;
 }
 
 /*AREA DO RODA PÉ*/
