@@ -76,9 +76,29 @@ main {
     background-color: rgb(191, 221, 194);
 }
 
-label{
-    
+.container_form{
+    margin: 0 auto;
+    border-radius: 10px;
 }
+
+.container_form h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(4, 31, 11) ;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.formulario{
+    margin:10px;
+}
+
+input, textarea{
+    margin-bottom: 8px;
+    outline: unset;
+}
+
+
+
 
 
 /*AREA DO RODA PÉ*/

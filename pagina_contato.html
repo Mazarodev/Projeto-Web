@@ -41,21 +41,30 @@
     </header>
      <!--corpo do site -->
      <main>
-        <form action="">
-            <fieldset>
-                <label for="nome_contato">Nome:</label>
-                <input type="text" nome="nome_contato" id="nome_contato">
-
-                <label for="email_contato">Email:</label>
-                <input type="email" nome="email_contato" id="email_contato">
-
-                <label for="telefone_contato">Telefone:</label>
-                <input type="number" nome="telefone_contato" id="telefone_contato">
-
-                <label for="mensagem_contato">Mensagem:</label>
-                <input type="" name="mensagem_contato" id="mensagem_contato">
-            </fieldset>
-        </form>
+        <div class="container_form">
+            <h1>Formulário de Contato</h1>
+                <form class="formulario">
+                    <div>
+                        <label for="nome_contato">Nome:</label>
+                        <input type="text" nome="nome_contato" id="nome_contato">
+                    </div>
+                    <div >
+                        <label for="email_contato">Email:</label>
+                        <input type="email" nome="email_contato" id="email_contato">
+                    </div>
+                    <div>   
+                        <label for="telefone_contato">Telefone:</label>
+                        <input type="number" nome="telefone_contato" id="telefone_contato">
+                    </div>
+                    <div>    
+                        <label for="mensagem_contato">Mensagem:</label>
+                        <textarea name="mensagem_contato" id="mensagem_contato" cols="30" rows="10" placeholder="Digite a sua mensagem:"></textarea>
+                    </div>
+                    <div>   
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+        </div>    
     </main>
 
     <!--roda pé do site-->
