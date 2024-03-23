@@ -45,32 +45,60 @@
         <!--formulário de doação-->    
         <div id="container_form">
             <form class="form1">
-                <h2 class="title" >Doação</h2>
+                <h2 class="title" >Informações Pessoais</h2>
                     
-                        <label class="form" for="nome">Nome:</label>
+                        <label class="form" for="nome">Nome Completo:</label>
                         <div class="input">
                             <input class="form" type="text" name="nome" id="nome" placeholder="Digite:">
                         </div>
                     
                     
-                        <label class="form" for="email">Email</label>
+                        <label class="form" for="cpf">CPF</label>
                         <div class="input">
-                        <input  class="form" type="email" name="email" id="email" placeholder="Digite:">
+                        <input  class="form" type="cpf" name="cpf" id="cpf" placeholder="Digite:">
                         </div>
                                 
-                        <label class="form" for="telefone">Telefone:</label>
+                        <label class="form" for="dat_nascimento">Data de Nascimento:</label>
                         <div class="input">   
-                        <input class="form" type="text" name="telefone" id="telefone" placeholder="Digite:">
-                        </div>                              <label class="form" for="mensagem">Mensagem:</label>
+                        <input class="form" type="date" name="dat_nascimento" id="dat_nascimento" placeholder="Digite:">
+                        </div>                              
+                        
+                        <label class="form" for="telefone">Telefone</label>
                         <div class="input">   
-                        <input class="form" type="text" name="mensagem" id="mensagem" placeholder="Digite:">
-                       </div>                            
+                        <input class="form" type="number" name="telefone" id="telefone" placeholder="Digite:">
+                        </div>                            
+                        
+                        <label class="form" for="email">Email:</label>
+                        <div class="input">   
+                        <input class="form" type="text" name="email" id="email" placeholder="Digite:">
+                        </div>                
+
+                        <label class="form" for="email">Email:</label>
+                        <div class="input">   
+                        <input class="form" type="text" name="email" id="email" placeholder="Digite:">
+                        </div>   
+
+                <h2 class="title">Doação</h2> 
+
+                        <label class="form" for="email">Valor:</label>
+                        <div class="input form" >
+                        <input class="form" type="number" name="valor" id="valor" placeholder="R$">
+                        </div> 
+                        
+                        <div class="sla">
+                            <div class="form sla1">
+                            <input type="radio" name="pagamento" value="pix">PIX
+                            </div>    
+                            
+                            <div class="form sla1">
+                            <input type="radio" name="pagamento" value="cartao">Cartão de crédito    
+                            </div>
+                         </div>
                         <div id="botao">
                         <button class="form" type="submit">Enviar</button>
                         </div>
             </form>
-    </div>                
-                 
+    </div>    
     </main>
     
     <!--roda pé do site-->

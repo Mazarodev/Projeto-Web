@@ -68,7 +68,6 @@ header{
 
 main {
     padding-top: 150px;
-    height: 500px;
     background-color: rgb(191, 221, 194);
 }
 
@@ -83,13 +82,12 @@ main {
     align-content: center;
     margin-left: 30%;
     margin-right: 30%;
-    margin-top: 0.5%;
+    
 }
 
 .form{
     color: black;
     outline: unset;
-    
 }
 
 
@@ -111,7 +109,7 @@ input[type=number]::-webkit-inner-spin-button,
     width: 100%;
     border: none;
     outline: none;
-    transform: translateY(-10%);
+    
     color: #0b4e2a;
     font-size: 11pt;
 }
@@ -120,6 +118,14 @@ input[type=number]::-webkit-inner-spin-button,
     margin-top: 10%;
     width: 100%;
     text-align: center;
+}
+
+.sla{
+    display: flex;
+}
+
+.sla1{
+    margin-right: 5px;
 }
 
 #botao button{
