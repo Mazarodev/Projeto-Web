@@ -41,28 +41,31 @@
     </header>
      <!--corpo do site -->
      <main>
-        <div class="container_form">
-            <h1>Formulário de Contato</h1>
-                <form class="formulario">
-                    <div>
-                        <label for="nome_contato">Nome:</label>
-                        <input type="text" nome="nome_contato" id="nome_contato">
-                    </div>
-                    <div >
-                        <label for="email_contato">Email:</label>
-                        <input type="email" nome="email_contato" id="email_contato">
-                    </div>
-                    <div>   
-                        <label for="telefone_contato">Telefone:</label>
-                        <input type="number" nome="telefone_contato" id="telefone_contato">
-                    </div>
-                    <div>    
-                        <label for="mensagem_contato">Mensagem:</label>
-                        <textarea name="mensagem_contato" id="mensagem_contato" cols="30" rows="10" placeholder="Digite a sua mensagem:"></textarea>
-                    </div>
-                    <div>   
-                        <input type="submit" value="Enviar">
-                    </div>
+        <div id="container_form">
+                <form class="form1">
+                    <h2 class="title" >Contato</h2>
+                        
+                            <label class="form" for="nome">Nome:</label>
+                            <div class="input">
+                                <input class="form" type="text" name="nome" id="nome" placeholder="Digite:">
+                            </div>
+                        
+                        
+                            <label class="form" for="email">Email</label>
+                            <div class="input">
+                            <input  class="form" type="email" name="email" id="email" placeholder="Digite:">
+                            </div>
+                                    
+                            <label class="form" for="telefone">Telefone:</label>
+                            <div class="input">   
+                            <input class="form" type="text" name="telefone" id="telefone" placeholder="Digite:">
+                            </div>                              <label class="form" for="mensagem">Mensagem:</label>
+                            <div class="input">   
+                            <input class="form" type="text" name="mensagem" id="mensagem" placeholder="Digite:">
+                           </div>                            
+                            <div id="botao">
+                            <button class="form" type="submit">Enviar</button>
+                            </div>
                 </form>
         </div>    
     </main>
