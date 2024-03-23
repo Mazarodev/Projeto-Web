@@ -77,17 +77,17 @@ main {
 }
 
 #container_form{
-    position:relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #d7f0d9;
+    background-color: white;
     border-radius: 10px;
-    padding: 65px;
-    width: min-content;   
+    padding: 65px;  
     align-items: center;
     color: black;
-
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 0.5%;
 }
 
 .form{
