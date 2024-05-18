@@ -102,44 +102,44 @@
     </main>
         <script>
             function limpar(){
-                document.getElementById("txtNome").style.backgroundColor = "white" ;
-                document.getElementById("txtCpf").style.backgroundColor = "white" ;
-                document.getElementById("txtDat_nascimento").style.backgroundColor = "white" ;
-                document.getElementById("txtTelefone").style.backgroundColor = "white" ;
-                document.getElementById("txtEmail").style.backgroundColor = "white" ;
-                document.querySelector("#erroNome").textContent = "" ;
-                document.querySelector("#erroCpf").textContent = "" ;
-                document.querySelector("#erroNascimento").textContent = "" ;
-                document.querySelector("#erroTelefone").textContent = "" ;
-                document.querySelector("#erroEmail").textContent = "" ;
-       
+                document.getElementById("txtNome").style.backgroundColor = "white";
+                document.getElementById("txtCpf").style.backgroundColor = "white";
+                document.getElementById("txtDat_nascimento").style.backgroundColor = "white";
+                document.getElementById("txtTelefone").style.backgroundColor = "white";
+                document.getElementById("txtEmail").style.backgroundColor = "white";
+                document.querySelector("#erroNome").textContent = "";
+                document.querySelector("#erroCpf").textContent = "";
+                document.querySelector("#erroNascimento").textContent = "";
+                document.querySelector("#erroTelefone").textContent = "";
+                document.querySelector("#erroEmail").textContent = "";
+    
             }
 
             function verificar(){
-                limpar() ;
-                var enviar = true ;
+                limpar();
+                var enviar = true;
 
                 var n = document.getElementById("txtNome").value;
                 if( n.length == 0 ) {
-                    enviar = false ;
-                    document.querySelector("#erroNome").textContent = "Preencha o campo nome" ;
-                    document.getElementById("txtNome").style.backgroundColor = "lightyellow" ;
+                    enviar = false;
+                    document.querySelector("#erroNome").textContent = "Preencha o campo nome";
+                    document.getElementById("txtNome").style.backgroundColor = "lightyellow";
                 }
 
                 var c = document.getElementById("txtCpf").value;
                 
 
-                var d = document.getElementById("txtDat_nascimento").value ;
+                var d = document.getElementById("txtDat_nascimento").value;
                 
 
-                var t = document.getElementById("txtTelefone").value ;
+                var t = document.getElementById("txtTelefone").value;
                 
                 
-                var e = document.getElementById("txtEmail").value ;
+                var e = document.getElementById("txtEmail").value;
                 if( e.indexOf("@") < 0){
-                    enviar = false ;
-                    document.querySelector("#erroEmail").textContent = "Preencha corretamente o campo E-mail" ;
-                    document.getElementById("txtEmail").style.backgroundColor = "lightyellow" ;
+                    enviar = false;
+                    document.querySelector("#erroEmail").textContent = "Preencha corretamente o campo E-mail";
+                    document.getElementById("txtEmail").style.backgroundColor = "lightyellow";
                 }
 
                 if( enviar ){
