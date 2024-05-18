@@ -144,6 +144,9 @@ input[type=number]::-webkit-inner-spin-button,
     background-color: #0d522d;
 }
 
+span {
+    color: red;
+}
 
 /*AREA DO RODA PÉ*/
 

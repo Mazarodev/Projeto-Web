@@ -44,43 +44,43 @@
     <main>
         <!--formulário de doação-->    
         <div id="container_form">
-            <form class="form1">
+            <form class="form1" method="post">
                 <h2 class="title" >Informações Pessoais</h2>
                     
-                        <label class="form" for="nome">Nome Completo:</label>
+                        <label class="form" for="txtNome">Nome Completo:</label>
                         <div class="input">
-                            <input class="form" type="text" name="nome" id="nome" placeholder="Digite:">
+                            <input class="form" type="text" name="txtNome" id="txtNome" placeholder="Digite:">
+                            <span id="erroNome"></span>
                         </div>
                     
                     
-                        <label class="form" for="cpf">CPF</label>
+                        <label class="form" for="txtCpf">CPF</label>
                         <div class="input">
-                        <input  class="form" type="cpf" name="cpf" id="cpf" placeholder="Digite:">
+                        <input  class="form" type="number" name="txtCpf" id="txtCpf" placeholder="Digite:">
+                        <span id="erroCpf"></span>
                         </div>
                                 
-                        <label class="form" for="dat_nascimento">Data de Nascimento:</label>
+                        <label class="form" for="txtDat_nascimento">Data de Nascimento:</label>
                         <div class="input">   
-                        <input class="form" type="date" name="dat_nascimento" id="dat_nascimento" placeholder="Digite:">
+                        <input class="form" type="date" name="txtDat_nascimento" id="txtDat_nascimento" placeholder="Digite:">
+                        <span id="erroNascimento"></span>
                         </div>                              
                         
-                        <label class="form" for="telefone">Telefone</label>
+                        <label class="form" for="txtTelefone">Telefone</label>
                         <div class="input">   
-                        <input class="form" type="number" name="telefone" id="telefone" placeholder="Digite:">
-                        </div>                            
-                        
-                        <label class="form" for="email">Email:</label>
-                        <div class="input">   
-                        <input class="form" type="text" name="email" id="email" placeholder="Digite:">
-                        </div>                
+                        <input class="form" type="text" name="txtTelefone" id="txtTelefone" placeholder="Digite:">
+                        <span id="erroTelefone"></span>
+                        </div>                                                                
 
-                        <label class="form" for="email">Email:</label>
+                        <label class="form" for="txtEmail">Email:</label>
                         <div class="input">   
-                        <input class="form" type="text" name="email" id="email" placeholder="Digite:">
+                        <input class="form" type="text" name="txtEmail" id="txtEmail" placeholder="Digite:">
+                        <span id="erroEmail"></span>
                         </div>   
 
                 <h2 class="title">Doação</h2> 
 
-                        <label class="form" for="email">Valor:</label>
+                        <label class="form" for="valor">Valor:</label>
                         <div class="input form" >
                         <input class="form" type="number" name="valor" id="valor" placeholder="R$">
                         </div> 
@@ -95,12 +95,59 @@
                             </div>
                          </div>
                         <div id="botao">
-                        <button class="form" type="submit">Enviar</button>
+                        <button class="form" type="submit" onclick="verificar()">Enviar</button>
                         </div>
             </form>
     </div>    
     </main>
-    
+        <script>
+            function limpar(){
+                document.getElementById("txtNome").style.backgroundColor = "white" ;
+                document.getElementById("txtCpf").style.backgroundColor = "white" ;
+                document.getElementById("txtDat_nascimento").style.backgroundColor = "white" ;
+                document.getElementById("txtTelefone").style.backgroundColor = "white" ;
+                document.getElementById("txtEmail").style.backgroundColor = "white" ;
+                document.querySelector("#erroNome").textContent = "" ;
+                document.querySelector("#erroCpf").textContent = "" ;
+                document.querySelector("#erroNascimento").textContent = "" ;
+                document.querySelector("#erroTelefone").textContent = "" ;
+                document.querySelector("#erroEmail").textContent = "" ;
+       
+            }
+
+            function verificar(){
+                limpar() ;
+                var enviar = true ;
+
+                var n = document.getElementById("txtNome").value;
+                if( n.length == 0 ) {
+                    enviar = false ;
+                    document.querySelector("#erroNome").textContent = "Preencha o campo nome" ;
+                    document.getElementById("txtNome").style.backgroundColor = "lightyellow" ;
+                }
+
+                var c = document.getElementById("txtCpf").value;
+                
+
+                var d = document.getElementById("txtDat_nascimento").value ;
+                
+
+                var t = document.getElementById("txtTelefone").value ;
+                
+                
+                var e = document.getElementById("txtEmail").value ;
+                if( e.indexOf("@") < 0){
+                    enviar = false ;
+                    document.querySelector("#erroEmail").textContent = "Preencha corretamente o campo E-mail" ;
+                    document.getElementById("txtEmail").style.backgroundColor = "lightyellow" ;
+                }
+
+                if( enviar ){
+                    document.form1.submit();
+                }
+            }
+
+        </script>
     <!--roda pé do site-->
     <footer>
         <div class="containerRodape">
