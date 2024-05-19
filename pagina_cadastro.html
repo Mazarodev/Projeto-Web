@@ -82,16 +82,17 @@
 
                         <label class="form" for="valor">Valor:</label>
                         <div class="input form" >
-                        <input class="form" type="number" name="valor" id="valor" placeholder="R$">
+                        <input class="form" type="number" name="txtValor" id="txtValor" placeholder="R$">
+                        <span id="erroValor"></span>
                         </div> 
                         
                         <div class="sla">
                             <div class="form sla1">
-                            <input type="radio" name="pagamento" value="pix">PIX
+                            <input type="radio" name="pagamento" value="pix"> PIX 
                             </div>    
                             
                             <div class="form sla1">
-                            <input type="radio" name="pagamento" value="cartao">Cartão de crédito    
+                            <input type="radio" name="pagamento" value="cartao"> Cartão de crédito    
                             </div>
                         </div>
                         <div id="botao">
@@ -107,12 +108,13 @@
                 document.getElementById("txtDat_nascimento").style.backgroundColor = "white";
                 document.getElementById("txtTelefone").style.backgroundColor = "white";
                 document.getElementById("txtEmail").style.backgroundColor = "white";
+                document.getElementById("txtValor").style.backgroundColor = "white";
                 document.querySelector("#erroNome").textContent = "";
                 document.querySelector("#erroCpf").textContent = "";
                 document.querySelector("#erroNascimento").textContent = "";
                 document.querySelector("#erroTelefone").textContent = "";
                 document.querySelector("#erroEmail").textContent = "";
-                
+                document.querySelector("#erroValor").textContent = "";
             }
             
             function verificar(){
@@ -130,17 +132,21 @@
                 if( c.length != 11) {
                     enviar = false;
                     document.querySelector("#erroCpf").textContent = "Preencha corretamente o campo CPF";
-                    document.getElementById("txtNome").style.backgroundColor = "lightyellow";
+                    document.getElementById("txtCpf").style.backgroundColor = "lightyellow";
                 }
                 
                 var d = document.getElementById("txtDat_nascimento").value;
-                
+                if(d.length == 0) {
+                    enviar = false;
+                    document.querySelector("#erroNascimento").textContent = "Preencha corretamente o campo data de nascimento";
+                    document.getElementById("txtDat_nascimento").style.backgroundColor = "lightyellow";
+                }
                 
                 var t = document.getElementById("txtTelefone").value;
                 if( t.length != 11) {
                     enviar = false;
                     document.querySelector("#erroTelefone").textContent = "Preencha corretamente o campo Telefone";
-                    document.getElementById("txtNome").style.backgroundColor = "lightyellow";
+                    document.getElementById("txtTelefone").style.backgroundColor = "lightyellow";
                 }  
                 
                 var e = document.getElementById("txtEmail").value;
@@ -150,6 +156,15 @@
                     document.getElementById("txtEmail").style.backgroundColor = "lightyellow";
                 }
                 
+                var v = document.getElementById("txtValor").value;
+                if( v.length == 0 || v <= 0) {
+                    enviar = false;
+                    document.querySelector("#erroValor").textContent = "Preencha corretamente o campo Valor";
+                    document.getElementById("txtValor").style.backgroundColor = "lightyellow";
+                }
+
+
+
                 if( enviar ){
                     document.form1.submit();
                 }
