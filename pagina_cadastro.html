@@ -122,18 +122,26 @@
                 var n = document.getElementById("txtNome").value;
                 if( n.length == 0 ) {
                     enviar = false;
-                    document.querySelector("#erroNome").textContent = "Preencha o campo nome";
+                    document.querySelector("#erroNome").textContent = "Preencha corretamente o campo nome";
                     document.getElementById("txtNome").style.backgroundColor = "lightyellow";
                 }
                 
                 var c = document.getElementById("txtCpf").value;
-                
+                if( c.length != 11) {
+                    enviar = false;
+                    document.querySelector("#erroCpf").textContent = "Preencha corretamente o campo CPF";
+                    document.getElementById("txtNome").style.backgroundColor = "lightyellow";
+                }
                 
                 var d = document.getElementById("txtDat_nascimento").value;
                 
                 
                 var t = document.getElementById("txtTelefone").value;
-                
+                if( t.length != 11) {
+                    enviar = false;
+                    document.querySelector("#erroTelefone").textContent = "Preencha corretamente o campo Telefone";
+                    document.getElementById("txtNome").style.backgroundColor = "lightyellow";
+                }  
                 
                 var e = document.getElementById("txtEmail").value;
                 if( e.indexOf("@") < 0){

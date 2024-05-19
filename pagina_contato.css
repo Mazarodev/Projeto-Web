@@ -103,7 +103,7 @@ main {
 input[type=number]::-webkit-inner-spin-button,
 
 .input{
-    min-width: 300px;
+    min-width: 600px;
     border-radius: 22px;
     border: 2px solid black;
     padding: 5px;
