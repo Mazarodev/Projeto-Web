@@ -49,7 +49,7 @@
                     
                         <label class="form" for="txtNome">Nome Completo:</label>
                         <div class="input">
-                            <input class="form" type="text" name="txtNome" id="txtNome" placeholder="Digite:" required>
+                            <input class="form" type="text" name="txtNome" id="txtNome" placeholder="Digite:" >
                             <span id="erroNome"></span>
                         </div>
                     
@@ -74,7 +74,7 @@
 
                         <label class="form" for="txtEmail">Email:</label>
                         <div class="input">   
-                        <input class="form" type="text" name="txtEmail" id="txtEmail" placeholder="Digite:" required>
+                        <input class="form" type="text" name="txtEmail" id="txtEmail" placeholder="Digite:" >
                         <span id="erroEmail"></span>
                         </div>   
 
@@ -88,13 +88,14 @@
                         
                         <div class="sla">
                             <div class="form sla1">
-                            <input type="radio" name="pagamento" value="pix"> PIX 
+                            <input type="radio" name="pagamento" class="pagamento" value="pix"> PIX 
                             </div>    
                             
                             <div class="form sla1">
-                            <input type="radio" name="pagamento" value="cartao"> Cartão de crédito    
+                            <input type="radio" name="pagamento" class="pagamento" value="cartao"> Cartão de crédito   
                             </div>
-                        </div>
+                            <p id="mensagemErro" style="color: red; display: none;">   Por favor, selecione uma opção</p>
+                        </div>sddsds
                         <div id="botao">
                         <button class="form" type="submit" onclick="verificar()">Enviar</button>
                         </div>
@@ -163,6 +164,23 @@
                     document.getElementById("txtValor").style.backgroundColor = "lightyellow";
                 }
 
+
+                var radios = document.getElementsByName('pagamento');
+                var selecionado = false;
+                var i;
+                for (i = 0; i < radios.length; i++) {
+                    if (radios[i].checked) {
+                        selecionado = true;
+                        break;
+                    }
+                }
+
+                if (!selecionado) {
+                    document.getElementById('mensagemErro').style.display = 'block';
+                    enviar = false;
+                } else {
+                    document.getElementById('mensagemErro').style.display = 'none';
+                }
 
 
                 if( enviar ){
