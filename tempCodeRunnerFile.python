@@ -1,48 +1,7 @@
-print("TABELA DOS ANIMAIS:")
-print()
-print("Código  Animal \t Consumo\dia")
-print("   1     Leão  \t     30kg")
-print("   2     Urso  \t     60kg")
-print("   3   Elefante\t     90kg")
-print()
+primero_valor = input("Digite um valor: ")
+segundo_valor = input("Digite outro valor: ")
 
-codigo : int
-quantidade : int
-custoDiario: float
-repeticao : str
-
-while repeticao == 'sS':
-    print("DADOS DE ENTRADA: ")
-    print()
-    codigo = int(input("Digite o código do animal: "))
-    while codigo != 1 and codigo != 2 and codigo != 3:
-        codigo = int(input("Código Inválido! Digite Novamente: "))
-
-    quantidade = int(input("Digite a quantidade de animais: "))
-    custoDiario = float(input("Digite o custo estimado por quilo de comida: "))
-    print()
-
-    quantidadeDiario : float
-    quantidadeMes : float
-    custoMes : float
-
-    if codigo == 1:
-        quantidadeDiario = quantidade * 30
-        quantidadeMes = quantidadeDiario * 30
-        custoMes = quantidadeMes * custoDiario
-    elif codigo == 2:
-        quantidadeDiario = quantidade * 60
-        quantidadeMes = quantidadeDiario * 30
-        custoMes = quantidadeMes * custoDiario
-    else:
-        quantidadeDiario = quantidade * 90
-        quantidadeMes = quantidadeDiario * 30
-        custoMes = quantidadeMes * custoDiario
-
-    print("RESULTADOS: ")
-    print()
-    print(f"Quantidade Diário: {quantidadeDiario:.2f} Kg")
-    print(f"Quantidade Mensal: {quantidadeMes:.2f} Kg")
-    print(f"Custo estimado mensal: R$ {quantidadeDiario:.2f} ")
-    print()
-    repeticao = input("Gostaria de repetir o programa?(s\%n)")
+if primero_valor > segundo_valor:
+    print(f"{primero_valor=} é maior que  {segundo_valor=}.")
+else:
+    print(f"{segundo_valor=} é maior que  {primero_valor=}.")

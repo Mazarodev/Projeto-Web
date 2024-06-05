@@ -42,33 +42,93 @@
      <!--corpo do site -->
      <main>
         <div id="container_form">
-                <form class="form1">
+                <form class="form1" method="post" action="contato.jsp">
                     <h2 class="title" >Contato</h2>
                         
-                            <label class="form" for="nome">Nome:</label>
-                            <div class="input">
-                                <input class="form" type="text" name="nome" id="nome" placeholder="Digite:">
-                            </div>
+                        <label class="form" for="txtNome">Nome:</label>
+                        <div class="input">
+                            <input class="form" type="text" name="txtNome" id="txtNome" placeholder="Digite:">
+                            <span id="erroNome" class="error"></span>
+                        </div>
                         
                         
-                            <label class="form" for="email">Email</label>
-                            <div class="input">
-                            <input  class="form" type="email" name="email" id="email" placeholder="Digite:">
-                            </div>
+                        <label class="form" for="txtEmail">Email</label>
+                        <div class="input">
+                            <input  class="form" type="text" name="txtEmail" id="txtEmail" placeholder="Digite:">
+                            <span id="erroEmail" class="error"></span>
+                         </div>
                                     
-                            <label class="form" for="telefone">Telefone:</label>
-                            <div class="input">   
-                            <input class="form" type="text" name="telefone" id="telefone" placeholder="Digite:">
-                            </div>                              <label class="form" for="mensagem">Mensagem:</label>
-                            <div class="input">   
-                            <input class="form" type="text" name="mensagem" id="mensagem" placeholder="Digite:">
-                           </div>                            
-                            <div id="botao">
-                            <button class="form" type="submit">Enviar</button>
-                            </div>
+                        <label class="form" for="txtTelefone">Telefone:</label>
+                        <div class="input">   
+                            <input class="form" type="text" name="txtTelefone" id="txtTelefone" placeholder="Digite:">
+                            <span id="erroTelefone" class="error"></span>
+                         </div>                              
+                            
+                        <label class="form" for="txtMensagem">Mensagem:</label>
+                        <div class="input">   
+                            <input class="form" type="text" name="txtMensagem" id="txtMensagem" placeholder="Digite:">
+                        </div>                            
+                           
+                        <div id="botao">
+                        <button class="form" type="submit" onclick="verificar(event)">Enviar</button>
+                         </div>
                 </form>
         </div>    
     </main>
+        <script>
+    function limpar() {
+        document.getElementById("txtNome").style.backgroundColor = "white";
+        document.getElementById("txtTelefone").style.backgroundColor = "white";
+        document.getElementById("txtEmail").style.backgroundColor = "white";
+        document.getElementById("txtMensagem").style.backgroundColor = "white";
+        document.querySelector("#erroNome").textContent = "";
+        document.querySelector("#erroTelefone").textContent = "";
+        document.querySelector("#erroEmail").textContent = "";
+        document.querySelector("#erroMensagem").textContent = "";
+    }
+
+    function verificar(event) {
+        limpar();
+        var enviar = true;
+
+        var n = document.getElementById("txtNome").value;
+        if (n.length === 0) {
+            enviar = false;
+            document.querySelector("#erroNome").textContent = "Preencha corretamente o campo nome";
+            document.getElementById("txtNome").style.backgroundColor = "lightyellow";
+        }
+
+        var e = document.getElementById("txtEmail").value;
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(e)) {
+            enviar = false;
+            document.querySelector("#erroEmail").textContent = "Preencha corretamente o campo E-mail";
+            document.getElementById("txtEmail").style.backgroundColor = "lightyellow";
+        }
+
+        var t = document.getElementById("txtTelefone").value;
+        if (t.length !== 11 || isNaN(t)) {
+            enviar = false;
+            document.querySelector("#erroTelefone").textContent = "Preencha corretamente o campo Telefone";
+            document.getElementById("txtTelefone").style.backgroundColor = "lightyellow";
+        }
+
+        var v = document.getElementById("txtMensagem").value;
+        if (v.length === 0) {
+            enviar = false;
+            document.querySelector("#erroMensagem").textContent = "Preencha corretamente o campo Mensagem";
+            document.getElementById("txtMensagem").style.backgroundColor = "lightyellow";
+        }
+
+        if (!enviar) {
+            event.preventDefault();
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelector("form").addEventListener("submit", verificar);
+    });
+</script>
 
     <!--roda pé do site-->
     <footer>
