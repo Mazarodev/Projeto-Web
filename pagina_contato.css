@@ -72,7 +72,6 @@ header{
 
 main {
     padding-top: 150px;
-    height: 500px;
     background-color: rgb(191, 221, 194);
 }
 
@@ -99,14 +98,13 @@ main {
     color: black
 }
 
-input[type=number]::-webkit-inner-spin-button,
-
 .input{
-    min-width: 600px;
+    width: 100%;
     border-radius: 22px;
-    border: 2px solid black;
+    border: 2px solid black;    
     padding: 5px;
     margin: 0px 0px 12px -5px;
+
 }
 
 .input input{
