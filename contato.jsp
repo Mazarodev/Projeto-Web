@@ -2,10 +2,10 @@
 
 <%
  //criar as variaveis que vão armazenar as informações
-    String vemail = request.getParameter("email");
-    String vtelefone = request.getParameter("telefone");
-    String vmensagem =request.getParameter("mensagem");
-    String vnome = request.getParameter("nome");
+    String vemail = request.getParameter("txtEmail");
+    String vtelefone = request.getParameter("txtTelefone");
+    String vmensagem =request.getParameter("txtMensagem");
+    String vnome = request.getParameter("txtNome");
 
 //Variaveis para acessar o banco
     String banco = "projeto";

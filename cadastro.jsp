@@ -43,11 +43,13 @@
     stm.execute();
     stm.close();
 
-    String sql_doacao = "insert into doacao (doacao,pagamento) values (?,?)";
+    String sql_doacao = "insert into doacao (doacao,pagamento,email,nome) values (?,?,?,?)";
 
     PreparedStatement stm_doacao = conexao.prepareStatement(sql_doacao);
     stm_doacao.setString(1, vdoacao);
     stm_doacao.setString(2, vpagamento);
+    stm_doacao.setString(3, vemail);
+    stm_doacao.setString(4, vnome);
 
     stm_doacao.execute();
     stm_doacao.close();
