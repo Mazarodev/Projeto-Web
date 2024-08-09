@@ -5,3 +5,4 @@ Projeto Tecnologia WEB - HTML, CSS e JavaScript
 Captura de tela 2024-07-22 181235](https://github.com/user-attachments/assets/8fff77ee-e871-4d1d-97bb-5b45db372d94)
 ![Captura de tela 2024-07-22 181256](https://github.com/user-attachments/assets/8bb098a0-7526-49ca-9559-9c4b09595e31)
 ![image](https://github.com/user-attachments/assets/2d338478-1760-4c05-a9b1-cd0edf887213)
+Projeto acadêmico onde foi proposto desenvolver um site para uma ONG, utilizando as tecnologias comuns de desenvolvimento WEB, no caso HTML, CSS, javascript e jsp para fazer toda a conexão com o banco de dados MySql.
